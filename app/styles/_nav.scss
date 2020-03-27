@@ -1,0 +1,11 @@
+.navbar-sections .nav-item {
+  cursor: pointer;
+  &.active > * {
+    border-bottom: 1px solid white;    
+  }
+}
+
+.navigation-submenu {
+  background: $body-bg;
+  border: 1px solid white;
+}

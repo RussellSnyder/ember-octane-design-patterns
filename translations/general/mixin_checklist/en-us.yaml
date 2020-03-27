@@ -1,0 +1,5 @@
+general:
+  articles:
+    mixin_checklist: 
+      title: Mixin Checklist
+      subtitle: Mixin, Service, Util Or Base Class Inheritance?

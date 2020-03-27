@@ -1,0 +1,14 @@
+general:
+  data_flow: 
+    title: Data Flow
+    subtitle: Data Down, Actions Up!
+    scalability:
+      title: Two Way Binding Doesn't Scale
+      section_1: You will almost certainly not know wtf is going on...
+    flux_architecture:
+      title: Flux Archtecture Scales
+      image_1: 
+        src: https://survivejs.com/eccd841152209cbde7cbe79d4e72ec2e.png
+        alt: an image of flux pattern
+        caption: Flux isn't so hard now is it!?
+      section_1: Easy to reason about and has become standard in React and Vue communities

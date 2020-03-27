@@ -1,0 +1,5 @@
+patterns:
+  articles:
+    encapsulate_mixins: 
+      title: Fully Encapulate
+      subtitle: Something

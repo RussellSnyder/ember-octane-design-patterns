@@ -3,6 +3,7 @@
 module.exports = function(environment) {
   let ENV = {
     modulePrefix: 'ember-octane-design-patterns',
+    podModulePrefix: 'ember-octane-design-patterns/pods',
     environment,
     rootURL: '/',
     locationType: 'auto',

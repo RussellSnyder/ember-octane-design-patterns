@@ -1,0 +1,15 @@
+site_data:
+  title: Motifs de conception Ember
+  hello_world: Bonjour le monde!
+anti_patterns:
+  title: Anti Patterns
+general:
+  title: Générale
+patterns:
+  title: Motifs
+  components: Composantes
+  substates: Sous-États
+  data_down_actions_up: Actions vers le bas des données vers le haut
+  models: Des modèles
+  mixins: Mixins
+  actions: Actions

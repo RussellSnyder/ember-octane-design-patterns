@@ -1,0 +1,14 @@
+site_data:
+  title: Patrones de diseño de ascuas
+anti_patterns:
+  title: Anti Patrones
+general:
+  title: General
+patterns:
+  title: Patronas
+  components: Componentes
+  substates: Subestaciones
+  data_down_actions_up: Datos abajo Acciones arriba
+  models: Modelos
+  mixins: Mixins
+  actions: Comportamiento

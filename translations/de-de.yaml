@@ -1,0 +1,14 @@
+site_data:
+  title: Glut Designmuster
+anti_patterns:
+  title: Anti-Muster
+general:
+  title: Allgemeines
+patterns:
+  title: Muster
+  components: Komponenten
+  substates: Unterzustände
+  data_down_actions_up: Daten nach unten Aktionen nach oben
+  models: Modelle
+  mixins: Mixins
+  actions: Aktionen  

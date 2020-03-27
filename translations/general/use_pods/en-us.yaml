@@ -1,0 +1,14 @@
+general:
+  use_pods:
+    title: Use Pods
+    subtitle: Encapsulation of Concerns Reduces Cognitive Load
+    everybody_else_is_doing_it: 
+      title: Everybody else is doing it so jump on board!
+      section_1: Bacon ipsum dolor amet jowl porchetta pancetta, short ribs corned beef kevin capicola chislic landjaeger. Meatball salami spare ribs, drumstick chislic corned beef turducken. Meatball shank drumstick, picanha ball tip capicola beef ribs biltong jowl ribeye kevin. Ham hock strip steak rump pancetta venison pork belly. Burgdoggen turkey kielbasa capicola flank andouille tenderloin salami chuck sausage. Venison pork belly doner, short ribs tenderloin sausage short loin prosciutto. Meatloaf chislic alcatra venison biltong porchetta sausage shoulder.
+      section_2: Burgdoggen cupim shank chicken drumstick ball tip. Leberkas kielbasa rump ham hock turkey. Ball tip ham meatball corned beef short ribs, tri-tip bresaola short loin. Filet mignon alcatra cupim meatloaf tail shoulder cow capicola leberkas frankfurter ham buffalo bacon. Cow porchetta frankfurter, bresaola shank fatback burgdoggen tail tri-tip. Kevin pig cow pork belly pancetta shank turkey bacon bresaola prosciutto. Shankle ribeye tenderloin, pork chop sirloin frankfurter jerky ball tip pork loin capicola rump.
+    curly_brackets_are_so_2003: 
+      title: Curly Brackets Are So 2003!
+      section_1: Meteor already did that
+      section_2: Burgdoggen cupim shank chicken drumstick ball tip. Leberkas kielbasa rump ham hock turkey. Ball tip ham meatball corned beef short ribs, tri-tip bresaola short loin. Filet mignon alcatra cupim meatloaf tail shoulder cow capicola leberkas frankfurter ham buffalo bacon. Cow porchetta frankfurter, bresaola shank fatback burgdoggen tail tri-tip. Kevin pig cow pork belly pancetta shank turkey bacon bresaola prosciutto. Shankle ribeye tenderloin, pork chop sirloin frankfurter jerky ball tip pork loin capicola rump.
+      section_2_quote: To err is to be human
+      section_2_quote_author: Jack Johnson

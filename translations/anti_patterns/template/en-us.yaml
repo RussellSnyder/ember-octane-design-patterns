@@ -1,0 +1,5 @@
+anti_patterns:
+  articles:
+    template: 
+      title: title
+      subtitle: subtitle

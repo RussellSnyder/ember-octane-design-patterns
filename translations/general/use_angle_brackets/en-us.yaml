@@ -1,0 +1,5 @@
+general:
+  articles: 
+    use_angle_brackets:
+      title: Use Angle Brackets
+      subtitle: Makes Ember Feel Less Different 

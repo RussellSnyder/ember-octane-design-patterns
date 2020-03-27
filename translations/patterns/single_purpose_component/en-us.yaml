@@ -1,0 +1,5 @@
+patterns:
+  articles:
+    single_purpose_component: 
+      title: Single Purpose Component
+      subtitle: Do One Thing....Amazingly!

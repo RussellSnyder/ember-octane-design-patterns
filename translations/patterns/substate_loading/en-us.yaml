@@ -1,0 +1,17 @@
+patterns:
+  articles:
+    substate_loading: 
+      title: Substate Loading
+      subtitle: Comes For Free From Ember!
+      pattern_explanation:
+        show: Why Substate Loading?
+        hide: Alright, Enough about Substate Loading
+        overview: Overview of Substate Erroes
+        use_cases:
+          u1: Some Use Case
+        rabbit_holes:
+          r1: Some Place Not To Use
+        references:
+          ref1: 
+            title: Google this
+            link: https://google.com

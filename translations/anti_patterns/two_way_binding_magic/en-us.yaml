@@ -1,0 +1,5 @@
+anti_patterns:
+  articles:
+    two_way_binding_magic: 
+      title: Two Way Binding Magic
+      subtitle: It's Not As Entertaining As It Sounds....

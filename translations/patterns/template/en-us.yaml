@@ -1,0 +1,5 @@
+patterns:
+  articles:
+    template: 
+      title: Declaratice Rendering Pattern
+      subtitle: Something

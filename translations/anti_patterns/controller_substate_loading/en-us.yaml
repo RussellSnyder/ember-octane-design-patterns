@@ -1,0 +1,5 @@
+anti_patterns:
+  articles:
+    controller_substate_loading: 
+      title: Controller Substate Loading
+      subtitle: Shouldn't Loading Happen On The Route!?

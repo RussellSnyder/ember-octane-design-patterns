@@ -1,0 +1,5 @@
+anti_patterns:
+  articles:
+    god_controller: 
+      title: The God Controller
+      subtitle: When Your Controller Does Too Much Sheeeeeeeet!

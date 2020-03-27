@@ -1,0 +1,5 @@
+anti_patterns:
+  articles:
+    wtf_mixins: 
+      title: WTF Mixins
+      subtitle: Leads To Magic Components (In A Bad Way!)

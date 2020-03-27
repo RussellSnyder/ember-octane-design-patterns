@@ -1,0 +1,8 @@
+components:
+  pattern-explanation:
+    show: Show Explanation
+    hide: Hide Explanation
+    use-cases: Use Cases
+    overview: Overview
+    rabbit-holes: Beware of Rabbit Holes
+    references: Reference

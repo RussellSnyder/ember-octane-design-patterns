@@ -1,0 +1,17 @@
+patterns:
+  articles:
+    declarative_rendering: 
+      title: Declaratice Rendering Pattern
+      current_slide: The current slide is {currentSlideNumber}
+      pattern_explanation:
+        show: What is Declarative Rendering? 
+        hide: yo, that's a lot of info!
+        overview: Instead of relying on the DOM, declarative state management in Ember through computed properties enables a component to sync it's state with it's UI with little work! 
+        use_cases:
+          u1: Carousel
+        rabbit_holes:
+          r1: I dont know yet
+        references:
+          ref1: 
+            title: Ember Map Topic - Declarative Rendering
+            link: https://embermap.com/topics/declarative-rendering

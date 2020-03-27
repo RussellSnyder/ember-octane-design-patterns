@@ -1,0 +1,10 @@
+index:
+  how_to_use: How To Use This Guide
+  purpose:
+    This guide is for groups of coders who wish to unify their ember programming styles.
+    This in turn will ease code readability and the speed up development and debugging processes.
+    Although there are detailed explanations of each pattern on their respective page,
+    please look at the code in the repo to understand what is happening.
+  section_breakdown: 
+    The Patterns and Anti-Pattern sections are meant to be clear and concise examples of best and worst practices in regards to Ember development
+    The General Guidelines section is meant to give background and perspective for patterns as well as explain concepts that are not highly visible in code.

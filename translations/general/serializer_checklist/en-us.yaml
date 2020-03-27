@@ -1,0 +1,5 @@
+general:
+  articles:
+    serializer_checklist: 
+      title: Serializer Checklist
+      subtitle: Do You need A Serializer Or Method On Your Model?
