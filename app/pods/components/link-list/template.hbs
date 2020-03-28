@@ -1,0 +1,15 @@
+<ul class="list-inline text-center" data-test-link-list-container>  
+  {{#each items as | item |}}
+    <li class="list-inline-item nav-item" data-test-link-list-entry>
+      {{#if item.link}}
+        {{#link-to item.link class="nav-link"}}
+          {{item.title}}
+        {{/link-to}}
+      {{else}}
+        <li class="nav-link">
+          Coming Soon: {{item.title}}
+        </li>
+      {{/if}}
+    </li>
+  {{/each}}
+</ul>

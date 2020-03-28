@@ -7,4 +7,9 @@ export default class Router extends EmberRouter {
 }
 
 Router.map(function() {
+  this.route('patterns');
+  this.route('general', function() {
+    this.route('data-flow');
+  });
+  this.route('abstract-route-intl');
 });

@@ -9,7 +9,6 @@ const THEMES = {
 }
 
 const getThemeTranslation = (intl, theme) => {
-  console.log(intl.t(`theme.${theme.replace(/-/g, '_')}`))
   return intl.t(`theme.${theme.replace(/-/g, '_')}`)
 }
 const setThemeClassNameOnBody = (newTheme) => {

@@ -1,0 +1,9 @@
+<RouteContainer @title={{model.title}} @subtitle={{model.subtitle}}>
+  <IntlSection @t_ns={{model.t_ns}} @section="scalability" as |t_ns|>
+    <p>{{t (concat t_ns "section_1")}}</p>
+  </IntlSection>
+  <IntlSection @t_ns={{model.t_ns}} @section="flux_architecture" as |t_ns|>
+    <IntlImage @t_ns={{t_ns}} @image="image_1" />
+    <p>{{t (concat t_ns "section_1")}}</p>
+  </IntlSection>
+</RouteContainer>

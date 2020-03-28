@@ -1,0 +1,84 @@
+<h1 class="text-center" role="button" onclick={{action "updateCurrentlySelectedSection" null}}>
+  {{#link-to "index"}}
+    {{appTitle}}
+  {{/link-to}}
+</h1>
+<LanguageSelector @changeLocale={{action changeLocale}}/>
+
+<NavigationMenu as |Menu|>
+  <Menu.item as |Item|>
+    <h3><FaIcon @icon={{data.sections.general.icon}} class="mr-2" />{{t 'general.title'}}</h3>
+    <Item.submenu as |Menu|>
+      {{#each data.sections.general.articles as |article|}}
+        <Menu.item @route={{article.link}}>
+          <NavigationMenuLink @section="general" @article={{article}}/>
+        </Menu.item>
+      {{/each}}
+    </Item.submenu>
+  </Menu.item>
+  <Menu.item as |Item|>
+    <h3><FaIcon @icon={{data.sections.patterns.icon}} class="mr-2" />{{t 'patterns.title'}}</h3>
+    <Item.submenu as |Menu|>
+      <Menu.item as |Item|>
+        {{t 'patterns.substates'}}<FaIcon @icon="chevron-right" class="ml-1"/>
+        <Item.submenu as |Menu|>
+          {{#each data.sections.patterns.articles.substates as |article|}}
+            <Menu.item @route={{article.link}}>
+              <NavigationMenuLink @section="patterns" @article={{article}}/>
+            </Menu.item>
+          {{/each}}
+        </Item.submenu>
+      </Menu.item>
+      <Menu.item as |Item|>
+        {{t 'patterns.components'}}<FaIcon @icon="chevron-right" class="ml-1"/>
+        <Item.submenu as |Menu|>
+          {{#each data.sections.patterns.articles.components as |article|}}
+            <Menu.item @route={{article.link}}>
+              <NavigationMenuLink @section="patterns" @article={{article}}/>
+            </Menu.item>
+          {{/each}}
+        </Item.submenu>
+      </Menu.item>
+      <Menu.item as |Item|>
+        {{t 'patterns.data_down_actions_up'}}<FaIcon @icon="chevron-right" class="ml-1"/>
+        <Item.submenu as |Menu|>
+          {{#each data.sections.patterns.articles.data_down_actions_up as |article|}}
+            <Menu.item @route={{article.link}}>
+              <NavigationMenuLink @section="patterns" @article={{article}}/>
+            </Menu.item>
+          {{/each}}
+        </Item.submenu>
+      </Menu.item>
+      <Menu.item as |Item|>
+        {{t 'patterns.models'}}<FaIcon @icon="chevron-right" class="ml-1"/>
+        <Item.submenu as |Menu|>
+          {{#each data.sections.patterns.articles.models as |article|}}
+            <Menu.item @route={{article.link}}>
+              <NavigationMenuLink @section="patterns" @article={{article}}/>
+            </Menu.item>
+          {{/each}}
+        </Item.submenu>
+      </Menu.item>
+      <Menu.item as |Item|>
+        {{t 'patterns.mixins'}}<FaIcon @icon="chevron-right" class="ml-1"/>
+        <Item.submenu as |Menu|>
+          {{#each data.sections.patterns.articles.mixins as |article|}}
+            <Menu.item @route={{article.link}}>
+              <NavigationMenuLink @section="patterns" @article={{article}}/>
+            </Menu.item>
+          {{/each}}
+        </Item.submenu>
+      </Menu.item>
+    </Item.submenu>
+  </Menu.item>
+  <Menu.item as |Item|>
+    <h3><FaIcon @icon={{data.sections.anti-patterns.icon}} class="mr-2" />{{t 'anti_patterns.title'}}</h3>
+    <Item.submenu as |Menu|>
+      {{#each data.sections.anti-patterns.articles as |article|}}
+        <Menu.item @route={{article.link}}>
+          <NavigationMenuLink @section="anti_patterns" @article={{article}}/>
+        </Menu.item>
+      {{/each}}
+    </Item.submenu>
+  </Menu.item>
+</NavigationMenu>

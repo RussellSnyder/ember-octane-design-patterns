@@ -1,0 +1,6 @@
+{{#each wholeStars}}
+  <FaIcon @icon="star" data-test-rating-star />
+{{/each}}
+{{#if hasHalfStar}}
+  <FaIcon @icon="star-half" data-test-rating-star-half />
+{{/if}}

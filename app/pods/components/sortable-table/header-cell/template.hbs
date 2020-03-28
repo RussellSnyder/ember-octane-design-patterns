@@ -1,0 +1,12 @@
+{{yield}}
+
+<span class="icon">
+  {{#if isActive}}
+    {{#if isAscending}}
+      <FaIcon @icon="arrow-down" />
+    {{/if}}
+    {{#if isDescending}}
+      <FaIcon @icon="arrow-up" />
+    {{/if}}
+  {{/if}}
+</span>

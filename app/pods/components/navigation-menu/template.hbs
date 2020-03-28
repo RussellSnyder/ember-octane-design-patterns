@@ -1,0 +1,11 @@
+<nav class="navbar navbar-expand-sm">
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <DropdownList as |List|>
+      <ul class="navbar-nav mr-auto ml-auto">
+        {{yield (hash
+          item=(component 'navigation-menu-item' List=List)
+        )}}
+      </ul>
+    </DropdownList>
+  </div>
+</nav>

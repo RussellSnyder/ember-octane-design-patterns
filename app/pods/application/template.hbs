@@ -1,4 +1,5 @@
 <div id="app">
+  <h1>{{t 'site_data.title'}}</h1>
   <div>
     <h3>{{t 'theme.choose'}}</h3>
     <button {{on "click" (fn this.themeSwitcher.toggleColorScheme)}}>{{this.themeSwitcher.newColorSchemeDisplay}}</button>
@@ -11,6 +12,5 @@
       {{/each}}
     </select>
   </div>
-
   {{outlet}}
 </div>

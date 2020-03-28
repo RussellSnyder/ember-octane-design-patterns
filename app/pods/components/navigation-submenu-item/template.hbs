@@ -1,0 +1,24 @@
+<@List.item as |Item|>
+  {{#if @route}}
+    <li class="list-inline-item nav-item">
+      <a 
+        class="{{if Item.isActive 'active'}}"
+        {{action 'closeMenuAndTransitionTo' Item.clearActiveItems}}
+        href={{url}}
+      >
+        {{yield}}
+      </a>
+    </li>
+  {{else}}
+    <li class="{{if Item.isActive 'active'}}">
+      {{yield (hash
+        submenu=(component 'navigation-submenu'
+        Item=Item
+        tetherTarget=(concat '#' elementId)
+        attachment='top left'
+        targetAttachment='top right'
+        )
+      )}}
+    </li>
+  {{/if}}
+</@List.item>

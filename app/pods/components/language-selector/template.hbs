@@ -1,0 +1,5 @@
+<select onchange={{action changeLocale value="target.value"}}>
+  {{#each languageOptions as | language | }}
+    <option value={{language.value}}>{{language.name}}</option>
+  {{/each}}
+</select>
