@@ -1,6 +1,22 @@
 @import "pod-styles";
-@import "custom";
-@import "ember-cli-bootstrap-4/bootstrap";
+@import "node_modules/reset-css/sass/reset";
+
+@import "./variables";
+
+@import "_typography";
+@import "_layout";
+
+
+/* light is default mode, so pair with general html definition */
+body, .theme-solarized-dark  { @include rebase($base03,$base02,$base01,$base00,$base0,$base1,$base2,$base3)}
+.theme-solarized-light { @include rebase($base3,$base2,$base1,$base0,$base00,$base01,$base02,$base03)}
+body * {
+    color-profile: sRGB;
+    rendering-intent: auto;
+}
+
+
+// TODO move these into components
 @import "./carousel";
 @import "./nav";
 @import "./sortable-table";

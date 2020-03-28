@@ -13,3 +13,15 @@ patterns:
   models: Des modèles
   mixins: Mixins
   actions: Actions
+
+language:
+  choose: Sélectionnez une langue
+  en-us: anglais
+  fr-fr: français
+  es-es: espagnol
+  de-de: allemand
+
+theme:
+  choose: choisissez un thème de couleur
+  solarized_light: Solarized Lumière
+  solarized_dark: Solarized Foncé

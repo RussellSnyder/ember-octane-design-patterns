@@ -11,4 +11,16 @@ patterns:
   data_down_actions_up: Daten nach unten Aktionen nach oben
   models: Modelle
   mixins: Mixins
-  actions: Aktionen  
+  actions: Aktionen
+
+language:
+  choose: Wähle Sie eine Sprache
+  en-us: Englisch
+  fr-fr: Französisch
+  es-es: Spanisch
+  de-de: Deutsch
+
+theme:
+  choose: Wählen Sie ein Farbthema
+  light: Solarized Helle
+  dark: Solarized Dunkel

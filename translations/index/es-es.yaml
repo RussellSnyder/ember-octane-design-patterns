@@ -1,0 +1,10 @@
+index:
+  how_to_use: Como usar esta guia
+  purpose:
+    Esta guía es para grupos de codificadores que desean unificar sus estilos de programación de ascuas.
+    Esto a su vez facilitará la legibilidad del código y acelerará los procesos de desarrollo y depuración.
+    Aunque hay explicaciones detalladas de cada patrón en su página respectiva,
+    mire el código en el repositorio para comprender lo que está sucediendo.
+  section_breakdown: 
+    Las secciones de Patrones y Anti-Patrones están destinadas a ser ejemplos claros y concisos de las mejores y peores prácticas con respecto al desarrollo de Ember
+    La sección Pautas generales tiene como objetivo proporcionar antecedentes y perspectivas para los patrones, así como explicar conceptos que no son muy visibles en el código.

@@ -12,3 +12,15 @@ patterns:
   models: Models
   mixins: Mixins
   actions: Actions
+
+language: 
+  choose: Select a Language
+  en-us: English
+  fr-fr: French
+  es-es: Spanish
+  de-de: German
+
+theme:
+  choose: Select a Theme
+  solarized_light: Solarized Light
+  solarized_dark: Solarized Dark

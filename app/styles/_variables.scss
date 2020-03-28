@@ -1,0 +1,7 @@
+// This file is intended to contain all variables to be imported into component styles
+// No files imported here should containe styles that will compile to css
+@import "./variables/breakpoints";
+@import "./variables/colors";
+
+
+@import "./variables/mixins"

@@ -1,10 +1,12 @@
+@import "./_variables";
+
 .route-container {
   &__title {
-    color: $primary;
+    color: $yellow;
   }
   .intl-section {
     &__title {
-      color: $primary;
+      color: $yellow;
     }
   }
 }

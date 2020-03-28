@@ -1,0 +1,10 @@
+index:
+  how_to_use: Comment utiliser ce guide
+  purpose:
+    Ce guide est destiné aux groupes de codeurs qui souhaitent unifier leurs styles de programmation de braises.
+    Cela facilitera la lisibilité du code et accélérera les processus de développement et de débogage.
+    Bien qu'il existe des explications détaillées de chaque modèle sur leur page respective,
+    veuillez regarder le code dans le dépôt pour comprendre ce qui se passe.
+  section_breakdown: 
+    Les sections Patterns et Anti-Pattern sont censées être des exemples clairs et concis des meilleures et des pires pratiques en matière de développement Ember
+    La section Consignes générales est destinée à fournir un contexte et une perspective pour les modèles ainsi qu'à expliquer les concepts qui ne sont pas très visibles dans le code.

@@ -1,0 +1,10 @@
+index:
+  how_to_use: Verwendung dieses Handbuchs
+  purpose:
+    Dieses Handbuch richtet sich an Gruppen von Programmierern, die ihre Glutprogrammierstile vereinheitlichen möchten.
+    Dies wiederum erleichtert die Lesbarkeit des Codes und beschleunigt die Entwicklungs- und Debugging-Prozesse.
+    Obwohl es detaillierte Erklärungen zu jedem Muster auf der jeweiligen Seite gibt,
+    Bitte schauen Sie sich den Code im Repo an, um zu verstehen, was passiert.
+  section_breakdown: 
+    Die Abschnitte Patterns und Anti-Pattern sollen klare und präzise Beispiele für die besten und schlechtesten Praktiken in Bezug auf die Ember-Entwicklung sein
+    Der Abschnitt Allgemeine Richtlinien soll Hintergrundinformationen und Perspektiven für Muster geben sowie Konzepte erläutern, die im Code nicht gut sichtbar sind.

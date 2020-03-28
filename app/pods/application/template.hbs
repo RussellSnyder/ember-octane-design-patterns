@@ -1,3 +1,16 @@
-<div class="container py-4">
+<div id="app">
+  <div>
+    <h3>{{t 'theme.choose'}}</h3>
+    <button {{on "click" (fn this.themeSwitcher.toggleColorScheme)}}>{{this.themeSwitcher.newColorSchemeDisplay}}</button>
+  </div>
+  <div>
+    <h3>{{t 'language.choose'}}</h3>
+    <select {{on "change" (fn this.handleLanguageSwitch)}}>
+      {{#each this.languageSwitcher.selections as | language | }}
+        <option selected={{if (eq language.value this.languageSwitcher.activeLocale) 'true'}} value={{language.value}}>{{t (concat 'language.' language.value)}}</option>
+      {{/each}}
+    </select>
+  </div>
+
   {{outlet}}
 </div>
