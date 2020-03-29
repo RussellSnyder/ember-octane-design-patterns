@@ -11,7 +11,6 @@ const getArrayOfTranslations = (intl, explanationNamespace, desiredArrayKey, ext
   let finalReturn = []
   for (let i = 0; i < MAX_ARRAY_SIZE; i++) {
     const t_key = `${explanationNamespace}${desiredArrayKey}.${i}${extraKeys ? '.' + extraKeys[0] : ''}`;
-    console.log(t_key)
     if (!intl.exists(t_key)) { break; }
       if (extraKeys) {
         finalReturn.push({});

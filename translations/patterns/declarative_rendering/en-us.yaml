@@ -5,8 +5,8 @@ patterns:
     overview:
       title: the overview
       best_friends:
-        src: best_friends.png # might have a translated image
-        alt: an image of tw famouse mice kissing cause they are best friends
+        src: https://upload.wikimedia.org/wikipedia/commons/b/bd/Best_Friends.jpg # might have a translated image
+        alt: an image of two famouse mice kissing because they are best friends :-D
         caption: UI state and Component state can fall in love with the declarative rendering pattern
       intro: this pattern is a great way to eliminate errors that happen when your component state is not inline with your UI.
         Although often quite small, UI bugs are some of the most annoying and hardest to find  
