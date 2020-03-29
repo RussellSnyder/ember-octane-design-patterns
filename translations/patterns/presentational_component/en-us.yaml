@@ -1,5 +1,4 @@
 patterns:
-  articles:
-    presentational_component: 
-      title: Presentational Component
-      subtitle: The Dumbest Components That Exist
+  presentational_component: 
+    title: Presentational Component
+    subtitle: The Dumbest Components That Exist

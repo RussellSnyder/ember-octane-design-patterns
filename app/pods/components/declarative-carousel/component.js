@@ -1,19 +1,34 @@
-import Component from '@ember/component';
-import { computed } from '@ember/object';
+import Component from "@glimmer/component";
+import { action } from '@ember/object';
+import { tracked } from "@glimmer/tracking";
+import podNames from "ember-component-css/pod-names";
 
 const slideWidthPercent = 62.5;
+const requiredArgs = ['photos'];
 
-export default Component.extend({
-  classNames: 'carousel',
+export default class DeclarativeCarousel extends Component {
+  // this is a hack until ember-component-css gets updated
+  // https://github.com/ebryn/ember-component-css/issues/342
+  get styleNamespace() {
+    return podNames["declarative-carousel"];
+  }
 
-  slideSize: computed('photos.length', function() {
-    return this.photos.length
-  }),
+  @tracked
+  currentSlideIndex = 0;
 
-  photos: null, // passed in
-  currentSlideIndex: 0,
+  constructor(owner, args) {
+    super(owner, args);
 
-  updateCurrentSlideIndex: function(direction = 0) {
+    requiredArgs.forEach(arg => {
+      if (typeof args[arg] === 'undefined') { console.warn(`the argument ${arg} is required in DeclarativeCarousel`) }
+    })
+
+    this.photos = args.photos
+    this.slideSize = args.photos.length
+  }
+
+  @action
+  move(direction = 0) {
     let newSlideIndex;    
     if (direction < 0 && this.currentSlideIndex === 0) {
       newSlideIndex = this.photos.length - 1;
@@ -22,22 +37,16 @@ export default Component.extend({
     } else {
       newSlideIndex = this.currentSlideIndex + direction
     }
-    this.set('currentSlideIndex', newSlideIndex);
-  },
+    // TODO This is not actually declaratively rendered
+    // the move action should only updated the currentSlideIndex
+    // the other properties should watch currentSlideIndex and update themselves
+    this.currentSlideIndex = newSlideIndex;
+    this.transform = `transform: translate(-${slideWidthPercent * this.currentSlideIndex}%)`;
+    this.currentSlideDisplay = this.currentSlideIndex + 1;
+  }
 
-  actions: {
-    move(direction) {
-      this.updateCurrentSlideIndex(direction);
-    }
-  },
-
-  // UI Stuff
-  currentSlideDisplay: computed('currentSlideIndex', function() {
-    return this.currentSlideIndex + 1
-  }),
-  
-  transform: computed('currentSlideIndex', function() {
-    return `translate(-${slideWidthPercent * this.currentSlideIndex}%)`;
-  })
-
-});
+  @tracked
+  transform = `transform: translate(-${slideWidthPercent * this.currentSlideIndex}%)`
+  @tracked
+  currentSlideDisplay = this.currentSlideIndex + 1;
+}

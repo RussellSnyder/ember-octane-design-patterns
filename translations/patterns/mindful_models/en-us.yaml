@@ -1,5 +1,4 @@
 patterns:
-  articles:
-    mindful_models:
-      title: Mindful Models
-      subtitle: Something
+  mindful_models:
+    title: Mindful Models
+    subtitle: Something

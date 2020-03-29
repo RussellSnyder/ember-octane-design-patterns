@@ -1,0 +1,20 @@
+<RouteContainer @title={{model.title}} @subtitle={{model.subtitle}}>
+  <IntlSection @t_ns={{model.t_ns}} @section="overview" as |t_ns|>
+    <p>{{t (concat t_ns "intro")}}</p>
+    <IntlImage @t_ns={{t_ns}} @image="best_friends" />
+  </IntlSection>
+
+
+  <PatternExampleContainer @example="carousel" @t_ns={{model.t_ns}} as |t_ns|>
+    <DeclarativeCarousel
+      @photos={{model.photos}}
+    />
+  </PatternExampleContainer>
+
+  {{!-- <PatternExplanation @showText={{t (concat model.t_ns_pe "show")}} as | P |>
+    <P.overview @text={{t (concat model.t_ns_pe "overview")}} />
+    <P.use-cases @cases={{model.use_cases}} />
+    <P.non-cases @cases={{model.rabbit_holes}} />
+    <P.references @references={{model.references}} />
+  </PatternExplanation> --}}
+</RouteContainer>

@@ -1,5 +1,4 @@
 patterns:
-  articles:
-    contextual_component: 
-      title: Contextual Component
-      subtitle: Sometimes You Need Some Context
+  contextual_component: 
+    title: Contextual Component
+    subtitle: Sometimes You Need Some Context

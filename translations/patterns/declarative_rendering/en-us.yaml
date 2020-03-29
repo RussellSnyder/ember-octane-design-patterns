@@ -1,17 +1,29 @@
 patterns:
-  articles:
-    declarative_rendering: 
-      title: Declaratice Rendering Pattern
-      current_slide: The current slide is {currentSlideNumber}
-      pattern_explanation:
-        show: What is Declarative Rendering? 
-        hide: yo, that's a lot of info!
-        overview: Instead of relying on the DOM, declarative state management in Ember through computed properties enables a component to sync it's state with it's UI with little work! 
-        use_cases:
-          u1: Carousel
-        rabbit_holes:
-          r1: I dont know yet
-        references:
-          ref1: 
-            title: Ember Map Topic - Declarative Rendering
-            link: https://embermap.com/topics/declarative-rendering
+  declarative_rendering: 
+    title: Declaratice Rendering Pattern
+    subtitle: How your State and DOM can be Besties!
+    overview: 
+      best_friends:
+        src: best_friends.png # might have a translated image
+        alt: an image of tw famouse mice kissing cause they are best friends
+        caption: UI state and Component state can fall in love with the declarative rendering pattern
+      intro: this pattern is a great way to eliminate errors that happen when your component state is not inline with your UI.
+        Although often quite small, UI bugs are some of the most annoying and hardest to find  
+        This pattern can help you control those bugs and make Ember components that much more enjoyable to make :-)
+    examples:
+      carousel:
+        title: photo carousel
+        current_slide: The current slide is {currentSlideNumber}
+
+    pattern_explanation:
+      show: What is Declarative Rendering? 
+      hide: yo, that's a lot of info!
+      overview: Instead of relying on the DOM, declarative state management in Ember through computed properties enables a component to sync it's state with it's UI with little work! 
+      use_cases:
+        u1: Carousel
+      rabbit_holes:
+        r1: I dont know yet
+      references:
+        ref1: 
+          title: Ember Map Topic - Declarative Rendering
+          link: https://embermap.com/topics/declarative-rendering

@@ -1,24 +1,23 @@
-<div class="carousel-viewport" style="transform: {{transform}}">
+<div class={{styleNamespace}}>
+  <div class="viewport" {{prop style=this.transform}}>
+    {{#each photos as |photo|}}
+      <a class="slide">
+        <div class="image-wrapper">
+          <div style="background-image: url({{photo}})" class="image"></div>
+        </div>
+      </a>
+    {{/each}}
+  </div>
 
-  {{#each photos as |photo|}}
-    <a class="carousel-slide">
-      <div class="carousel-image-wrapper">
-        <div style="background-image: url({{photo}})" class="carousel-image"></div>
-      </div>
+  <div class="controls">
+    <a {{action "move" -1}} class="control" href="#">
+      {{fa-icon "angle-left"}}
     </a>
-  {{/each}}
-</div>
-
-<div class="carousel-controls">
-  <a {{action "move" -1}} class="carousel-control" href="#">
-    {{fa-icon "angle-left"}}
-  </a>
-  {{#if (media "isNotMobile")}}
-    <span class="carousel-control-sm">
+    <span class="control-sm">
       {{currentSlideDisplay}} / {{photos.length}}
     </span>
-  {{/if}}
-  <a {{action "move" 1}} class="carousel-control" href="#">
-    {{fa-icon "angle-right"}}
-  </a>
+    <a {{action "move" 1}} class="control" href="#">
+      {{fa-icon "angle-right"}}
+    </a>
+  </div>
 </div>

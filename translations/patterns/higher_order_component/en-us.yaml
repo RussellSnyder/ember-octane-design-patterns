@@ -1,5 +1,4 @@
 patterns:
-  component:
-    higher_order_component: 
-      title: Higher Order Component
-      subtitle: Components Making Components
+  higher_order_component: 
+    title: Higher Order Component
+    subtitle: Components Making Components

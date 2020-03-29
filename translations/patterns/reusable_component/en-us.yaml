@@ -1,20 +1,19 @@
 patterns:
-  articles:
-    reusable_component:
-      title: Resuable Component Pattern
-      subtitle: Write It Once, Use It Everywhere
-      pattern_explanation:
-        show: But Why? 
-        hide: Ok, that's enough man....
-        overview: passes initial data as individual, configurable properties and exposes an action to be handled in the calling context
-        use_cases:
-          u1: Building an Addon for the Ember Community :-)
-          u2: Components that will be reused in various scenarios in different routes and with different models
-        rabbit_holes:
-          r1: A component will only be used with one model and should modify the data directly
-          r2: A component should not be 'context aware' (know what the route has for state)
-          r3: If the above is true, see the single purpose component pattern
-        references:
-          ref1: 
-            title: Dianne Eramo EmberConf 2019
-            link: https://youtu.be/Kyd2mQpR_9c?t=377 # maybe there is a resource in another language available
+  reusable_component:
+    title: Resuable Component Pattern
+    subtitle: Write It Once, Use It Everywhere
+    pattern_explanation:
+      show: But Why? 
+      hide: Ok, that's enough man....
+      overview: passes initial data as individual, configurable properties and exposes an action to be handled in the calling context
+      use_cases:
+        u1: Building an Addon for the Ember Community :-)
+        u2: Components that will be reused in various scenarios in different routes and with different models
+      rabbit_holes:
+        r1: A component will only be used with one model and should modify the data directly
+        r2: A component should not be 'context aware' (know what the route has for state)
+        r3: If the above is true, see the single purpose component pattern
+      references:
+        ref1: 
+          title: Dianne Eramo EmberConf 2019
+          link: https://youtu.be/Kyd2mQpR_9c?t=377 # maybe there is a resource in another language available

@@ -1,5 +1,4 @@
 patterns:
-  articles:
-    provider_component: 
-      title: Provider Component
-      subtitle: Givem What They Want!
+  provider_component: 
+    title: Provider Component
+    subtitle: Givem What They Want!

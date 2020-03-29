@@ -1,11 +1,11 @@
-{{#each model.articles as |articles|}}
-  <h2>{{t (concat 'patterns.' articles.group '.title')}}</h2>
-  <ul>
-    {{#each articles.subgroup as |article|}}
-    {{log (concat 'patterns.' articles.group '.' article)}}
-      <li>{{t (concat 'patterns.' articles.group '.' article '.title')}}</li>
-    {{/each}}
-
-  </ul>
-{{/each}}
+<h2>{{t 'patterns.title'}}</h2>
+<ul>
+  {{#each model.articles as |article|}}
+    {{#let (concat article.t '.title') article.link
+      as |title link|
+    }}
+      <li><LinkTo @route={{link}}>{{t title}}</LinkTo></li>
+    {{/let}}
+  {{/each}}
+</ul>
 {{outlet}}

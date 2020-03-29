@@ -1,24 +1,28 @@
-import Component from '@ember/component';
+import Component from '@glimmer/component';
+import { tracked } from '@glimmer/tracking';
+import { action } from '@ember/object';
 import { inject as service } from '@ember/service';
-import data from "design-patterns/helpers/global-data"
 
-export default Component.extend({
-  router: service(),
+export default class ApplicationNavbar extends Component {
+  @service router;
 
-  currentSection: null,
-  data,
+  @tracked completed;
 
-  actions: {
-    updateCurrentlySelectedSection(newSection) {
-      this.set("currentSection", newSection)
-    }
-  },
+  currentSection = null
 
-  didInsertElement() {
+  @action
+  updateCurrentlySelectedSection(newSection) {
+    this.currentSection = newSection
+  }
+
+  constructor(owner, args) {
+    super(owner, args);
+
     const { currentRouteName } = this.router;
+
     if (currentRouteName && currentRouteName !== "index") {
       const routeParts = currentRouteName.split(".")
-      this.set('currentSection', routeParts[0])
+      this.currentSection = routeParts[0]
     }
   }
-});
+}

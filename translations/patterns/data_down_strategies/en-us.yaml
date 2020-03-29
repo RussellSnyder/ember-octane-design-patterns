@@ -1,5 +1,4 @@
 patterns:
-  articles:
-    data_down_strategies: 
-      title: Data Down Strategies
-      subtitle: Get Down With Your Data!
+  data_down_strategies: 
+    title: Data Down Strategies
+    subtitle: Get Down With Your Data!

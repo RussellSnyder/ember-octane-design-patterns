@@ -1,11 +1,8 @@
-<h1 class="text-center" role="button" onclick={{action "updateCurrentlySelectedSection" null}}>
-  {{#link-to "index"}}
-    {{appTitle}}
-  {{/link-to}}
-</h1>
-<LanguageSelector @changeLocale={{action changeLocale}}/>
 
-<NavigationMenu as |Menu|>
+<LinkTo @route="general">{{t 'general.title'}}</LinkTo>
+<LinkTo @route="patterns">{{t 'patterns.title'}}</LinkTo>
+
+{{!-- <NavigationMenu as |Menu|>
   <Menu.item as |Item|>
     <h3><FaIcon @icon={{data.sections.general.icon}} class="mr-2" />{{t 'general.title'}}</h3>
     <Item.submenu as |Menu|>
@@ -81,4 +78,4 @@
       {{/each}}
     </Item.submenu>
   </Menu.item>
-</NavigationMenu>
+</NavigationMenu> --}}
