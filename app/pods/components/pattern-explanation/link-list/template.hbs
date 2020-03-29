@@ -1,3 +1,6 @@
 {{#each items as | item |}}
-  <li><a target="_blank" rel="noopener" href={{item.link}}>{{item.title}}</a></li>
+  <li>
+    <a target="_blank" rel="noopener" href={{item.link}}>{{item.title}}</a>
+    {{#if item.short_explanation}} | {{item.short_explanation}}{{/if}}
+  </li>
 {{/each}}

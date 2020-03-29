@@ -5,16 +5,21 @@
   </IntlSection>
 
 
-  <PatternExampleContainer @example="carousel" @t_ns={{model.t_ns}} as |t_ns|>
+  <PatternExampleContainer
+    @example_name="carousel"
+    @t_ns={{model.t_ns}}
+    @code_location="app/pods/components/declarative-carousel"
+  as |t_ns|>
     <DeclarativeCarousel
       @photos={{model.photos}}
     />
   </PatternExampleContainer>
 
-  {{!-- <PatternExplanation @showText={{t (concat model.t_ns_pe "show")}} as | P |>
-    <P.overview @text={{t (concat model.t_ns_pe "overview")}} />
-    <P.use-cases @cases={{model.use_cases}} />
-    <P.non-cases @cases={{model.rabbit_holes}} />
-    <P.references @references={{model.references}} />
-  </PatternExplanation> --}}
+  <PatternExplanation @t_ns={{model.t_ns}} as | P |>
+    <P.use-cases />
+    <br>
+    <P.rabbit-holes />
+    <br>
+    <P.references />
+  </PatternExplanation>
 </RouteContainer>

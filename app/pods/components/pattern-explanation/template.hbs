@@ -1,16 +1,16 @@
 {{#if (has-block)}}
+    <div data-test-explanation>
+      {{yield (hash
+        use-cases=(component "pattern-explanation/use-cases" cases=use_cases)
+        rabbit-holes=(component "pattern-explanation/rabbit-holes" cases=rabbit_holes)
+        references=(component "pattern-explanation/references" references=references)
+      )}}
+    </div>
+
   {{#if isShowingExplanation}}
     <button class="d-block mt-4 mb-4 btn btn-outline-info" data-test-show {{action "toggleExplanation"}}>
       {{if hideText hideText (t "components.pattern-explanation.hide")}}
     </button>
-    <div data-test-explanation>
-      {{yield (hash
-        use-cases=(component "pattern-explanation/use-cases")
-        non-cases=(component "pattern-explanation/rabbit-holes")
-        overview=(component "pattern-explanation/overview")
-        references=(component "pattern-explanation/references")
-      )}}
-    </div>
   {{else}}
     <button class="d-block mt-4 btn btn-outline-info" data-test-hide {{action "toggleExplanation"}}>
       {{if showText showText (t "components.pattern-explanation.show")}}

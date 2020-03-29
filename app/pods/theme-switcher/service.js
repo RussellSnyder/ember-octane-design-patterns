@@ -38,11 +38,11 @@ export default class ThemeSwitcherService extends Service {
   currentTheme = THEMES.SOLARIZED_DARK;
 
   @tracked
-  newColorSchemeDisplay = getThemeTranslation(this.intl, THEMES.SOLARIZED_DARK)
-
+  newColorSchemeDisplay = getThemeTranslation(this.intl, getNextTheme(this.currentTheme))
+  
   @action 
   updateButtonText() {
-    this.newColorSchemeDisplay = getThemeTranslation(this.intl, THEMES.SOLARIZED_DARK)
+    this.newColorSchemeDisplay = getThemeTranslation(this.intl, getNextTheme(this.currentTheme))
   }
 
   @action

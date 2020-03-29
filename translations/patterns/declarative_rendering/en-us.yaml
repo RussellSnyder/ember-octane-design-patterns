@@ -2,7 +2,8 @@ patterns:
   declarative_rendering: 
     title: Declaratice Rendering Pattern
     subtitle: How your State and DOM can be Besties!
-    overview: 
+    overview:
+      title: the overview
       best_friends:
         src: best_friends.png # might have a translated image
         alt: an image of tw famouse mice kissing cause they are best friends
@@ -20,10 +21,17 @@ patterns:
       hide: yo, that's a lot of info!
       overview: Instead of relying on the DOM, declarative state management in Ember through computed properties enables a component to sync it's state with it's UI with little work! 
       use_cases:
-        u1: Carousel
+        - Well....a Carousel
+        - Something else
+        - Another Thing
       rabbit_holes:
-        r1: I dont know yet
+        - I dont know yet
+        - Another mysetery
+        - Don't use it as soap or dental floss
       references:
-        ref1: 
-          title: Ember Map Topic - Declarative Rendering
+        - title: Ember Map Topic - Declarative Rendering
           link: https://embermap.com/topics/declarative-rendering
+          short_explanation: this is where the main inspiration comes from
+        - title: Another Reference to show yaml object arrays
+          link: https://embermap.com/topics/declarative-rendering
+          short_explanation: And This is a test

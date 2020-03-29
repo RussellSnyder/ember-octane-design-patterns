@@ -1,4 +1,8 @@
 export default {
+  source_code: {
+    base_url: "https://github.com/RussellSnyder/ember-octane-design-patterns/",
+    branch_route: "tree/master/",
+  },
   app: {
     title: "Ember Design Patterns"
   },
